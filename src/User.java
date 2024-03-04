@@ -1,10 +1,14 @@
+import java.util.*;
+
 public class User {
     private String username;
     private String password;
+    private ArrayList<ToDoItem> toDoItems;
 
     public User(String username, String password) {
         this.username = username;
         this.password = password;
+        this.toDoItems = new ArrayList<>();
     }
 
     /**
@@ -21,6 +25,9 @@ public class User {
         return password;
     }
 
+    public ArrayList<ToDoItem> getToDoItems() {
+        return toDoItems;
+    }
     /**
      * Sets the username of the user.
      * @param username The username to set.
