@@ -23,7 +23,7 @@ public class AuthenticationService implements IAuthenticationService {
     // TODO Now: Implement the logIn method to return the user if the username and password match, and null otherwise
     public User logIn(String username, String password)
     {
-        for (int i = 0; i <=users.size(); i++)
+        for (int i = 0; i < users.size(); i++)
         {
             User user = users.get(i);
             if(user.getUsername().equals(username))
